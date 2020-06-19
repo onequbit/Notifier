@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Notifier.exe" version="1.0.0.0" publicKeyToken="952436d3de85565b" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:publisher="Alfred Aquino" asmv2:product="Notifier" asmv2:supportUrl="https://github.com/onequbit/Notifier" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Notifier" version="0.0.0.0" publicKeyToken="FB3F07732F46CE69" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Notifier.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Notifier.exe" size="89600">
+      <assemblyIdentity name="Notifier" version="0.0.0.0" publicKeyToken="FB3F07732F46CE69" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>YOMG1uqfZj+UnstC/Qi7jLxlXK4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>  
+  <file name="Notifier.cs" size="2153">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>J5Z1oklGuJYORPtkNbpk+iPBjno=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ExtensionMethods.cs" size="7988">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>6rGCCCxGODEdNDU6mcGf5qcpweg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="onequbit.ico" size="77680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AHDrPmRFv1fYni1tQ3vsVauoRhk=</dsig:DigestValue>
+    </hash>
+  </file>  
+<publisherIdentity name="CN=IEU-ITS-XPS code signing" issuerKeyHash="5c2f3d9f66b403fd0b0bdc29fc6509cf763ee96d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>NDl7hxZgx0xRFl7uTjQC0ARQIvM=</DigestValue></Reference></SignedInfo><SignatureValue>pJZmyZQA81VB/lF0Z7tGX9cBcb6rWmn4PjWtlc0dc29SUPh59nX4dzw2cFZwJdgKTn2GCEFNi53ZF9il5dSWGw7mj4FhSlon1x5IcaIiHgjuuTPvzgbhcqGn5hB8mLWWIU8cYvP3BrXZhZLW3Xp2YkTRi3whWCDNOb8Ah9mlO3digaLIzq9RkLZamCTgM8hXE/cFtTYyuSAn6pm+FTfRPMRt17rNUN8a1f+9xFX5E6g77xKK8dhMuLdcStvS+7s4c31XnYGeraCmAzxrs5zwNLBDGixi0f35kstxbhg/x8WKSVTPOU/NzqbWDbdCOavXjI7vtNMZV8VCAqqvNzFHRA==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s9MEwYQO6p5xROjh/4fsg5LD+CepvlQU32rlfDzQBqTGjzbY7nEQcY2k/5QwNyCsJh0lud7pX7SwpRwGaFXKNnUlAQSXf7WnzghtdBtNRewCmGcA9qWtMaceFV3RnuxTTwbOnZ51YJEopOe4I7DyddCSrBqoYy/NY/qDyU8PsIyhhI7wpWxHEBfgOSN7KGdmonEsXWh02vIqifz4famkT1AqmVjzRp2d0HfBzVzTm9CxCp4h8uidYaSMN/5YpJ1foRM5O23pdCD3XRVsVDuOxvFSVCSkuy7LEbX+UhRTkVMjHrHOhgEWjMPzTaMaDPAXZ40LML/nfEHvp7Wc8niHgQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f3225004d002344eee5e16514cc76016877b3934" Description="" Url=""><as:assemblyIdentity name="Notifier.exe" version="1.0.0.0" publicKeyToken="952436d3de85565b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=IEU-ITS-XPS code signing</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>rWHchOcRCkKxfBY3v2Vc95IP06U=</DigestValue></Reference></SignedInfo><SignatureValue>U8mPuZfP8C7m5L3AWjgoUhzoOawhbZeW7URHTiFbkm/Q1bWF5dnYcYeYM2r8DmL87vvlyDx9sG4rmeQ3jiobgogDPuG+rr/nah4jhCRDU61szRubGA1Wmn2RQK/IcZe/VdOcHzg2BgbZP9O9WxEVMBInj2DYCvaPYyiI07CZ4CMtgytpAcL7dzZNgvKXdllLwYZyPRBqIub+RaOiR8sbeBurXrrBQX/a26jbxk9KgJnbavsukNsvADBCCXsFWxn7tLg7CUDxsB5lOWkiidcD4Y3C+r+ofawY2MLhVKGZuU8DTcbkRHiRnkmXymu6eJtlByzz2UV82J7+QfGWRfKFiA==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s9MEwYQO6p5xROjh/4fsg5LD+CepvlQU32rlfDzQBqTGjzbY7nEQcY2k/5QwNyCsJh0lud7pX7SwpRwGaFXKNnUlAQSXf7WnzghtdBtNRewCmGcA9qWtMaceFV3RnuxTTwbOnZ51YJEopOe4I7DyddCSrBqoYy/NY/qDyU8PsIyhhI7wpWxHEBfgOSN7KGdmonEsXWh02vIqifz4famkT1AqmVjzRp2d0HfBzVzTm9CxCp4h8uidYaSMN/5YpJ1foRM5O23pdCD3XRVsVDuOxvFSVCSkuy7LEbX+UhRTkVMjHrHOhgEWjMPzTaMaDPAXZ40LML/nfEHvp7Wc8niHgQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIDLjCCAhagAwIBAgIQQrFwGPCyVphGW3UqNovA7zANBgkqhkiG9w0BAQUFADAjMSEwHwYDVQQDDBhJRVUtSVRTLVhQUyBjb2RlIHNpZ25pbmcwHhcNMjAwNTE0MTkwNTQ2WhcNMjEwNTE0MTkyNTQ2WjAjMSEwHwYDVQQDDBhJRVUtSVRTLVhQUyBjb2RlIHNpZ25pbmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCz0wTBhA7qnnFE6OH/h+yDksP4J6m+VBTfauV8PNAGpMaPNtjucRBxjaT/lDA3IKwmHSW53ulftLClHAZoVco2dSUBBJd/tafOCG10G01F7AKYZwD2pa0xpx4VXdGe7FNPBs6dnnVgkSik57gjsPJ10JKsGqhjL81j+oPJTw+wjKGEjvClbEcQF+A5I3soZ2aicSxdaHTa8iqJ/Ph9qaRPUCqZWPNGnZ3Qd8HNXNOb0LEKniHy6J1hpIw3/liknV+hEzk7bel0IPddFWxUO47G8VJUJKS7LssRtf5SFFORUyMesc6GARaMw/NNoxoM8BdnjQswv+d8Qe+ntZzyeIeBAgMBAAGjXjBcMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAWBgNVHREEDzANggtJRVUtSVRTLVhQUzAdBgNVHQ4EFgQUXC89n2a0A/0LC9wp/GUJz3Y+6W0wDQYJKoZIhvcNAQEFBQADggEBAGN2oyAObaO6QJUC2pB1VBTje2tpAG++a1UVaURCKuIIdiuUSOTT1C1jiu4v4/TDPzuU+FuI4LtTPdwCzuTm/Ex5ihB5hyRcSTqgOkfyNiZwI7n/oK9SiSVyx5Czsb591/7dhgClTFk33s9dgN/3URIgaB5ZbNMATRaKigf0lxY1y9IT3P5FMWW2bqO1bOhtLrNH1X8+8xBGPyb6S3WJH7hC7LxHsbJlqhL72cS4q+qXpOu8zhNuT6mY9dRpWeomNn+bP7Ty8sdbLu0t1nSkaADDgmtqWXwePmUUVn0gX5cbdIX/WeYpV0HWdn+y/PCRkWYa1LlIHMzD/HpgQrQLGDI=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
